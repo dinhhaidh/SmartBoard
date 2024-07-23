@@ -1,0 +1,74 @@
+.home{
+    padding-top: 4.4rem;
+    position: relative;
+    height: 844px;
+    z-index: -1;
+    background-image: url(../img/Quét\ mã\ QR.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__container.container{
+        margin-inline: 1rem !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    &__icon{
+        display: flex;
+        column-gap: 0.3rem;
+        margin-bottom: 1.6rem;
+        img{
+            width: 18px;
+            height: 18px;
+        }
+        span{
+            color: $whitef;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: "SVN-Gilroy", sans-serif;
+        }
+    }
+    &__description{
+        color: $whitef;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "SVN-Gilroy", sans-serif;
+    }
+    &__Welcome{
+        text-align: center;
+    }
+    &__scan{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 0.4rem;
+        margin-bottom: 22px !important;
+        img{
+            background-color: #e8a908;
+            border-radius: 5px;
+            width: 36px;
+            height: 36px;
+        }
+        span{
+            color: #EFEFEF;
+            font-size: 20px;
+            font-weight: 600;
+            font-family: "SVN-Gilroy", sans-serif;
+        }
+    }
+    &__please{
+        color: $grayb4;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: "SVN-Gilroy", sans-serif;
+    }
+    &__bg{
+        position: absolute;
+        left: 50.5%;
+        top: 50%;
+        transform: translate(-50.7%, -50%);
+        width: 328px;
+        height: 328px;
+        object-fit: cover;
+    }
+}

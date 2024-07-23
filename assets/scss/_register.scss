@@ -1,0 +1,86 @@
+.registers{
+    background-color: $grrenef;
+    &__data{
+        padding-top: 4.4rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.8rem;
+    }
+    &__logo,
+    &__image{
+        margin: 0 auto;
+    }
+    
+    &__heading{
+        text-align: center;
+        font-weight: 600;
+        font-size: 24px;
+        font-family: "SVN-Gilroy", sans-serif;
+        margin-bottom: 37px;
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    &__form-control{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2.1rem;
+        input{
+            border-radius: 8px;
+            border: none;
+            background-color: #fff;
+            padding: 4px 10.6px 7.2px;
+
+            &::placeholder{
+                font-size: 16px;
+                font-weight: 600;
+                font-family: "SVN-Gilroy", sans-serif;
+            }
+        }
+    }
+    &-form{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-bottom: 1.97rem;
+        input{
+            border-radius: 8px;
+            border: none;
+            background-color: #fff;
+            padding: 4px 10.6px 7.2px;
+
+            &::placeholder{
+                font-size: 16px;
+                font-weight: 600;
+                font-family: "SVN-Gilroy", sans-serif;
+            }
+        }
+    }
+    &__password{
+        position: absolute;
+        top: 2.7rem;
+        right: 0.6rem;
+    }
+    &__desc{
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "SVN-Gilroy", sans-serif;
+        margin-bottom: 1rem;
+        letter-spacing: -0.1px;
+    }
+    &__button{
+        font-weight: 600;
+        font-size: 16px;
+        font-family: "SVN-Gilroy", sans-serif;
+        color: $graycf !important;
+        background-color: $black12 !important;
+        width: 100%;
+        padding: 7px 15px;
+        height: 36px !important;
+    }
+    &-form__passwork{
+        margin-bottom: 2.1rem;
+    }
+}

@@ -1,0 +1,86 @@
+.field{
+    padding-top: 4.35rem;
+    background-color: $whitef;
+    &__heading{
+        font-size: 24px;
+        font-weight: 600;
+        font-family: "SVN-Gilroy", sans-serif;
+        text-align: center;
+        color: $grren03;
+        margin-bottom: 14px;
+        letter-spacing: -0.3px;
+    }
+    &__text{
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "SVN-Gilroy", sans-serif;
+        text-align: center;
+        letter-spacing: -0.4px;
+        margin-bottom: 2.75rem;
+    }
+    &__main{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2.44rem;
+    }
+    &__cart{
+        position: relative;
+        margin: 0 auto;
+        img{
+            width: 253px;
+            height: 140px;
+
+        }
+    }
+    &__text{
+        margin-bottom: 2.8rem;
+    }
+    &__hotel{
+        font-size: 12.52px;
+        font-weight: 600;
+        font-family: "SVN-Gilroy", sans-serif;
+        color: $black15;
+        padding: 3.58px 7.15px;
+        background: $whitef;
+        border-radius: 17.89px;
+        position: absolute;
+        bottom: 0.73rem;
+        left: 0.6rem;
+        height: 25.15px;
+        width: 46.31px;
+    }
+    &__continue{
+        font-weight: 600;
+        font-family: "SVN-Gilroy", sans-serif;
+        color: $graycf;
+        font-size: 12.52px;
+        background: $black12;
+        border-radius: 26.83px;
+        width: 71.55px;
+        height: 35.9px;
+        position: absolute;
+        right: 0rem;
+        bottom: 0.1rem;
+        padding: 8.94px 8.89px
+    }
+    &__nail{
+        width: 42px !important;
+        bottom: 0.65rem;
+    }
+    &__salon{
+        width: 54px !important;
+        bottom: 0.65rem;
+        padding: 3.58px 8.15px;
+        letter-spacing: 1.5px;
+    }
+    &-nail{
+        letter-spacing: 0.8px;
+    }
+    &__button{
+        bottom: 0px;
+        letter-spacing: 0.6px;
+    }
+    &__continue-nailing{
+        letter-spacing: 0.5px;
+    }
+}

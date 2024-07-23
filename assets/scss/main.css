@@ -1,0 +1,950 @@
+@charset "UTF-8";
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+}
+
+li {
+  text-decoration: none !important;
+}
+
+ul {
+  padding-left: 0px !important;
+  list-style: none !important;
+  margin-bottom: 0px !important;
+}
+
+@font-face {
+  font-family: "MyFont";
+  src: url("../fonts/SF-Pro-Display/SF-Pro-Display-Medium.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyFont";
+  src: url("../fonts/SF-Pro-Display/SF-Pro-Display-Bold.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyFont";
+  src: url("../fonts/SF-Pro-Display/SF-Pro-Display-Regular.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyFont";
+  src: url("../fonts/SF-Pro-Display/SF-Pro-Display-Semibold.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyFont";
+  src: url("../fonts/SVN-Gilroy/SVN-Gilroy Thin.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyFont";
+  src: url("../fonts/SVN-Gilroy/SVN-Gilroy Medium.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyFont";
+  src: url("../fonts/SVN-Gilroy/SVN-Gilroy Regular.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyFont";
+  src: url("../fonts/SVN-Gilroy/SVN-Gilroy Bold.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyFont";
+  src: url("../fonts/SVN-Gilroy/SVN-Gilroy SemiBold.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyFont";
+  src: url("../fonts/SVN-Gilroy/SVN-Gilroy Thin.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Sử dụng font trong phần khác của mã SCSS */
+body {
+  font-family: "MyFont", sans-serif;
+}
+
+.container {
+  max-width: 358px;
+  margin-inline: 1.5rem;
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    margin-inline: 1rem !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+@media screen and (max-width: 370px) {
+  .container {
+    margin-inline: 1rem !important;
+  }
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 36px;
+  height: 36px;
+  background-color: #151515;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--frist-color);
+  transition: border 0.4s, background-color 0.4s;
+  border-radius: 50%;
+}
+
+.swiper-button-next {
+  top: 19.3rem;
+  right: 0rem;
+  z-index: 1;
+}
+.swiper-button-next img {
+  width: 16px;
+  height: 16px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-button-prev {
+  top: 19.3rem;
+  left: 0rem;
+  z-index: 1;
+}
+.swiper-button-prev img {
+  width: 16px;
+  height: 16px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.nav__logo {
+  color: #131313;
+  font-weight: 590;
+  font-size: 17px;
+  text-decoration: none;
+  margin-left: 1.6rem;
+  font-family: "SF-Pro-Display", sans-serif;
+}
+.nav__action {
+  display: flex;
+  -moz-column-gap: 0.4rem;
+       column-gap: 0.4rem;
+  margin-right: 0.8rem;
+}
+@media screen and (max-width: 1023px) {
+  .nav__menu {
+    position: fixed;
+    bottom: 0rem;
+    background-color: #fbfbfb;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: 0.4s;
+    padding: 10px 11px 0px 10px;
+    box-shadow: 0 4px 12px hsl(0, 0%, 80%);
+    border-radius: 10px 10px 0 0;
+    z-index: 3 !important;
+  }
+  .nav__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+  }
+  .nav__link {
+    justify-content: center;
+    row-gap: 0.4rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none !important;
+    font-family: "SVN-Gilroy", sans-serif;
+  }
+  .nav__link span {
+    color: #454545;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  .nav__link img {
+    margin: 0 auto;
+    width: 24px;
+    height: 24px;
+  }
+}
+.nav__action-cellular {
+  width: 19.2px;
+  height: 12.23px;
+}
+.nav__action-Wifi {
+  width: 17.14px;
+  height: 12.33px;
+}
+.nav__action-Battery {
+  width: 27.33px;
+  height: 13px;
+}
+.nav__item {
+  margin-bottom: 10px;
+}
+
+.active-link {
+  color: #038168;
+}
+
+.home {
+  padding-top: 4.4rem;
+  position: relative;
+  height: 844px;
+  z-index: -1;
+  background-image: url(../img/Quét\ mã\ QR.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home__container.container {
+  margin-inline: 1rem !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.home__icon {
+  display: flex;
+  -moz-column-gap: 0.3rem;
+       column-gap: 0.3rem;
+  margin-bottom: 1.6rem;
+}
+.home__icon img {
+  width: 18px;
+  height: 18px;
+}
+.home__icon span {
+  color: #EFEFEF;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "SVN-Gilroy", sans-serif;
+}
+.home__description {
+  color: #EFEFEF;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "SVN-Gilroy", sans-serif;
+}
+.home__Welcome {
+  text-align: center;
+}
+.home__scan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 0.4rem;
+       column-gap: 0.4rem;
+  margin-bottom: 22px !important;
+}
+.home__scan img {
+  background-color: #e8a908;
+  border-radius: 5px;
+  width: 36px;
+  height: 36px;
+}
+.home__scan span {
+  color: #EFEFEF;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "SVN-Gilroy", sans-serif;
+}
+.home__please {
+  color: #B4B4B4;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "SVN-Gilroy", sans-serif;
+}
+.home__bg {
+  position: absolute;
+  left: 50.5%;
+  top: 50%;
+  transform: translate(-50.7%, -50%);
+  width: 328px;
+  height: 328px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.for-you {
+  position: relative;
+  overflow: hidden;
+}
+.for-you__container {
+  position: relative;
+  margin: 0 auto;
+}
+.for-you__information {
+  margin: 0 auto;
+}
+.for-you__content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto !important;
+  padding-top: 4.4rem;
+}
+.for-you__text {
+  margin-bottom: 6px !important;
+  font-family: "SVN-Gilroy", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+.for-you__avatar-link {
+  display: flex;
+  -moz-column-gap: 0.6rem;
+       column-gap: 0.6rem;
+}
+.for-you__avatar {
+  width: 32px;
+  height: 32px;
+}
+.for-you__scan-link, .for-you__notification-content {
+  margin-right: 0px !important;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.3rem;
+  width: 36px !important;
+}
+.for-you__scan-link span, .for-you__notification-content span {
+  color: #151515 !important;
+  font-weight: 600 !important;
+  font-size: 12px !important;
+  text-align: center !important;
+  font-family: "SVN-Gilroy", sans-serif;
+}
+.for-you__notification {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.3rem;
+  width: 36px !important;
+}
+.for-you__img-1 {
+  width: 36px;
+  height: 36px;
+  background-color: #151515;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.for-you__img-1 img {
+  width: 28px;
+  height: 28px;
+}
+.for-you__login {
+  display: flex;
+  -moz-column-gap: 0.6rem;
+       column-gap: 0.6rem;
+}
+.for-you__search {
+  position: relative;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.for-you__search img {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.6rem;
+}
+.for-you__input {
+  padding: 0.3rem 0.35rem 0.35rem 2.2rem;
+  border: none !important;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.for-you__input::-moz-placeholder {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "SVN-Gilroy", sans-serif;
+  color: #B4B4B4;
+}
+.for-you__input::placeholder {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "SVN-Gilroy", sans-serif;
+  color: #B4B4B4;
+}
+.for-you__bg {
+  background-color: #EFEFEF;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+.for-you__images {
+  margin: initial;
+}
+.for-you__article {
+  width: 220px;
+}
+.for-you-image-1, .for-you-image-2, .for-you-image-3 {
+  position: absolute;
+}
+.for-you-image-1 {
+  top: 10.3rem;
+  left: 1.4rem;
+}
+.for-you-image-2 {
+  right: 0.1rem;
+  top: 17rem;
+}
+.for-you-image-3 {
+  left: 1.7rem;
+  top: 21.6rem;
+}
+.for-you-image {
+  margin: 1.55rem 0 2rem;
+}
+.for-you__cart {
+  width: 81px;
+  height: 88px;
+}
+.for-you__cart img {
+  width: 81px;
+  height: 62px;
+}
+.for-you__link {
+  color: #fff;
+  background-color: #989898;
+  border-radius: 0px 0px 15px 15px;
+  font-family: "SVN-Gilroy", sans-serif;
+  padding: 0.3rem 0.5rem;
+  font-size: 14px;
+}
+.for-you__fullscreen {
+  margin-top: 1.1rem;
+  text-align: center;
+  color: #038168;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "SVN-Gilroy", sans-serif;
+  transform: translateX(18px);
+  letter-spacing: -0.5px;
+}
+.for-you__welcome {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "SVN-Gilroy", sans-serif;
+}
+.for-you-main {
+  margin-top: 2.5rem;
+}
+.for-you-title {
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "SVN-Gilroy", sans-serif;
+  color: #151515;
+}
+.for-you-advertisement {
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "SVN-Gilroy", sans-serif;
+  color: #151515;
+  margin-bottom: 1.5rem;
+}
+.for-you__main {
+  padding-bottom: 5rem;
+}
+.for-you__add {
+  background-color: #151515;
+  width: 81px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px 10px 0px 0px;
+}
+.for-you-full {
+  height: 100px !important;
+}
+.for-you__add img {
+  width: 24px;
+  height: 24px;
+}
+.for-you-list {
+  position: absolute;
+  width: 135px;
+  height: 148px;
+  background-color: #151515;
+  top: 3.5rem;
+  right: -100%;
+  border-radius: 20px;
+  z-index: 2;
+  transition: right 0.4s;
+  padding: 10px 0px;
+}
+.for-you-link {
+  display: flex;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+.for-you-link span {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "SVN-Gilroy", sans-serif;
+  color: #EFEFEF;
+}
+.for-you-img-10 {
+  border-radius: 10px 10px 0px 0px;
+}
+.for-you .swiper-button-next.for-you__right-1 {
+  top: 32rem;
+  right: 0rem;
+  background-color: #151515;
+  opacity: 60%;
+  z-index: 1;
+}
+.for-you .swiper-button-next.for-you__right {
+  top: 42.5rem;
+  background-color: #151515;
+  opacity: 60%;
+  z-index: 1;
+}
+.for-you__close {
+  color: #fff;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1rem;
+}
+
+.show-menu {
+  right: 0;
+}
+
+.login__for-you {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 3;
+  height: 476px;
+  border-radius: 18px 21px 0 0;
+}
+.login__for-you img {
+  width: 300px;
+  height: 300px;
+  margin: 10px auto 12px;
+}
+.login__desc {
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "SVN-Gilroy", sans-serif;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.15px;
+}
+.login__button {
+  width: 90%;
+  border-radius: 30px;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "SVN-Gilroy", sans-serif;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.login__button-1 {
+  background-color: #121212;
+  color: #fff;
+  margin-bottom: 1.2rem;
+}
+.login__button-2 {
+  background-color: #fff;
+  color: #121212;
+  border: 1px solid #000;
+  margin-bottom: 1rem;
+}
+
+.registers {
+  background-color: #eff8f6;
+}
+.registers__data {
+  padding-top: 4.4rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.8rem;
+}
+.registers__logo, .registers__image {
+  margin: 0 auto;
+}
+.registers__heading {
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  font-family: "SVN-Gilroy", sans-serif;
+  margin-bottom: 37px;
+}
+.registers__form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.registers__form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.1rem;
+}
+.registers__form-control input {
+  border-radius: 8px;
+  border: none;
+  background-color: #fff;
+  padding: 4px 10.6px 7.2px;
+}
+.registers__form-control input::-moz-placeholder {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "SVN-Gilroy", sans-serif;
+}
+.registers__form-control input::placeholder {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "SVN-Gilroy", sans-serif;
+}
+.registers-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 1.97rem;
+}
+.registers-form input {
+  border-radius: 8px;
+  border: none;
+  background-color: #fff;
+  padding: 4px 10.6px 7.2px;
+}
+.registers-form input::-moz-placeholder {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "SVN-Gilroy", sans-serif;
+}
+.registers-form input::placeholder {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "SVN-Gilroy", sans-serif;
+}
+.registers__password {
+  position: absolute;
+  top: 2.7rem;
+  right: 0.6rem;
+}
+.registers__desc {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "SVN-Gilroy", sans-serif;
+  margin-bottom: 1rem;
+  letter-spacing: -0.1px;
+}
+.registers__button {
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "SVN-Gilroy", sans-serif;
+  color: #CFCFCF !important;
+  background-color: #121212 !important;
+  width: 100%;
+  padding: 7px 15px;
+  height: 36px !important;
+}
+.registers-form__passwork {
+  margin-bottom: 2.1rem;
+}
+
+.field {
+  padding-top: 4.35rem;
+  background-color: #EFEFEF;
+}
+.field__heading {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "SVN-Gilroy", sans-serif;
+  text-align: center;
+  color: #038168;
+  margin-bottom: 14px;
+  letter-spacing: -0.3px;
+}
+.field__text {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "SVN-Gilroy", sans-serif;
+  text-align: center;
+  letter-spacing: -0.4px;
+  margin-bottom: 2.75rem;
+}
+.field__main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.44rem;
+}
+.field__cart {
+  position: relative;
+  margin: 0 auto;
+}
+.field__cart img {
+  width: 253px;
+  height: 140px;
+}
+.field__text {
+  margin-bottom: 2.8rem;
+}
+.field__hotel {
+  font-size: 12.52px;
+  font-weight: 600;
+  font-family: "SVN-Gilroy", sans-serif;
+  color: #151515;
+  padding: 3.58px 7.15px;
+  background: #EFEFEF;
+  border-radius: 17.89px;
+  position: absolute;
+  bottom: 0.73rem;
+  left: 0.6rem;
+  height: 25.15px;
+  width: 46.31px;
+}
+.field__continue {
+  font-weight: 600;
+  font-family: "SVN-Gilroy", sans-serif;
+  color: #CFCFCF;
+  font-size: 12.52px;
+  background: #121212;
+  border-radius: 26.83px;
+  width: 71.55px;
+  height: 35.9px;
+  position: absolute;
+  right: 0rem;
+  bottom: 0.1rem;
+  padding: 8.94px 8.89px;
+}
+.field__nail {
+  width: 42px !important;
+  bottom: 0.65rem;
+}
+.field__salon {
+  width: 54px !important;
+  bottom: 0.65rem;
+  padding: 3.58px 8.15px;
+  letter-spacing: 1.5px;
+}
+.field-nail {
+  letter-spacing: 0.8px;
+}
+.field__button {
+  bottom: 0px;
+  letter-spacing: 0.6px;
+}
+.field__continue-nailing {
+  letter-spacing: 0.5px;
+}
+
+.personal__information {
+  background-color: #eff8f6;
+}
+.personal__information-subtitle {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 4.5rem;
+       column-gap: 4.5rem;
+  margin-bottom: 40px;
+}
+.personal__information-container {
+  padding-top: 4.4rem;
+  transform: translateX(1.5px);
+}
+.personal__information-description {
+  color: #038168;
+  font-weight: 600;
+  font-size: 24px;
+  font-family: "SVN-Gilroy", sans-serif;
+  letter-spacing: -0.3px;
+  margin-bottom: 0px !important;
+}
+.personal__information-avatar {
+  position: relative;
+  margin-bottom: 3.1rem;
+}
+.personal__information-img {
+  margin: 0 auto;
+}
+.personal__information-camera {
+  position: absolute;
+  bottom: -0.7rem;
+  right: 7.6rem;
+}
+.personal__information-fullname {
+  color: #000;
+  font-weight: 600;
+  font-family: "SVN-Gilroy", sans-serif;
+  font-size: 20px;
+  margin-bottom: 0.8rem;
+}
+.personal__information-input {
+  padding: 0 0px 4.6px 0px;
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
+  display: block;
+  width: 100%;
+  transform: translateY(2px);
+}
+.personal__information-input::-moz-placeholder {
+  color: #454545;
+  font-weight: 600;
+  font-family: "SVN-Gilroy", sans-serif;
+  transform: translateX(-2px);
+  letter-spacing: -0.4px;
+  font-size: 16px;
+}
+.personal__information-input::placeholder {
+  color: #454545;
+  font-weight: 600;
+  font-family: "SVN-Gilroy", sans-serif;
+  transform: translateX(-2px);
+  letter-spacing: -0.4px;
+  font-size: 16px;
+}
+.personal__information-control {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.8rem;
+}
+.personal__information-momo {
+  margin-bottom: 0.6rem;
+}
+.personal__information-address {
+  margin-bottom: 0.6rem;
+}
+.personal__information--phone {
+  padding: 0 0px 4.6px 2px !important;
+}
+.personal__information--phone::-moz-placeholder {
+  letter-spacing: 1px;
+}
+.personal__information--phone::placeholder {
+  letter-spacing: 1px;
+}
+.personal__information--fullname::-moz-placeholder {
+  letter-spacing: 0.2px !important;
+}
+.personal__information--fullname::placeholder {
+  letter-spacing: 0.2px !important;
+}
+.personal__information h6.personal__information-fullname.personal__information--fullname {
+  letter-spacing: -0.2px;
+}
+.personal__information-Phone {
+  transform: translateY(0px) !important;
+}
+.personal__information-Phone::-moz-placeholder {
+  letter-spacing: 0.8px;
+}
+.personal__information-Phone::placeholder {
+  letter-spacing: 0.8px;
+}
+.personal__information-main {
+  margin-top: 2.9rem;
+}
+.personal__information-desc {
+  color: #000;
+  font-weight: 600;
+  font-family: "SVN-Gilroy", sans-serif;
+  font-size: 20px;
+  margin-bottom: 13px;
+}
+.personal__information-skincare {
+  height: 22px;
+  padding: 0px 4px 0px;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  font-weight: 600;
+  font-family: "SVN-Gilroy", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+}
+.personal__information-button {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(82px, 1fr));
+  gap: 0.55rem;
+}
+.personal__information-succes {
+  border: 1px solid #35AA4F;
+  color: #35aa4f;
+}
+.personal__information-primary {
+  border: 1px solid #2966D1;
+  color: #2966D1;
+}
+.personal__information-danger {
+  color: #d6232c;
+  border: 1px solid #d6232c;
+}
+.personal__information-waning {
+  color: #ddb508;
+  border: 1px solid #ddb508;
+}/*# sourceMappingURL=main.css.map */

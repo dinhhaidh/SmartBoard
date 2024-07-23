@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./scss/main.css">
+</head>
+<body>
+    <header>
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="home.html" class="nav__link active-link">
+                        <img src="./img/home.svg" alt="">
+                        <span>Trang chủ</span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="for-you.html" class="nav__link">
+                        <img src="./img/user-octagon.svg" alt="">
+                        <span>Cho bạn</span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="charts.html" class="nav__link">
+                        <img src="./img/ranking.svg" alt="">
+                        <span>Bảng xếp hạng</span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="classify.html" class="nav__link active-link">
+                        <img src="./img/category-2.svg" alt="">
+                        <span>Phân loại</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="main">
+        <section class="for-you">
+            <div class="for-you__container container">
+                <div class="for-you__content">
+                    <div class="for-you__avatar-link">
+                        <a href="" class="for-you__avatar">
+                            <img src="./img/avatar.png" alt="">
+                        </a>
+                        <div class="for-you__dave">
+                            <p class="for-you__text">
+                                Hello Dave,
+                            </p>
+                            <p class="for-you__welcome">
+                                Welcome back!
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="for-you__login">
+                        <h5 class="home__scan for-you__scan-link">
+                            <img src="./img/qr-code.svg" alt="">
+                            <span>Quét QR</span>
+                        </h5>
+                        <h5 class="for-you__notification-content">
+                            <a href="#" class="for-you__img-1">
+                                <img src="./img/fi-rr-bell.svg" alt="">
+                            </a>
+                            <span>Thông báo</span>
+                        </h5>
+                        <div class="for-you__hamburger">
+                            <div class="for-you__toggle" id="for-you-toggle">
+                                <img src="./img/hamburger.svg" alt="">
+                            </div>
+                            <ul class="for-you-list"  id="for-you-menu">
+                                <li class="for-you__item">
+                                    <a href="" class="for-you-link">
+                                        <img src="./img/for-you-user.svg" alt="">
+                                        <span>Hồ sơ</span>
+                                    </a>
+
+                                </li>
+                                <li class="for-you__item">
+                                    <a href="" class="for-you-link">
+                                        <img src="./img/fi-rr-money.svg" alt="">
+                                        <span>Tài chính</span>
+                                    </a>
+                                </li>
+                                <li class="for-you__item">
+                                    <a href="" class="for-you-link">
+                                        <img src="./img/fi-rr-id-badge.svg" alt="">
+                                        <span>Lịch chiếu</span>
+                                    </a>
+                                </li>
+                                <li class="for-you__item">
+                                    <a href="" class="for-you-link">
+                                        <img src="./img/fi-rr-sign-out.svg" alt="">
+                                        <span>Đăng xuất</span>
+                                    </a>
+                                </li>
+                                <div class="for-you__close" id="for-you-close">
+                                    <i class="ri-close-line"></i>
+                                </div>
+
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="for-you__main">
+                    <div class="for-you__search">
+                        <input type="text" class="for-you__input" placeholder="Tìm kiếm">
+                        <img src="./img/search.svg" alt="">
+                    </div>
+    
+                    <div class="for-you__images">
+                        <div class="for-you-content swiper">
+                            <div class="swiper-wrapper">
+                                <article class="for-you__article swiper-slide">
+                                    <img src="./img/for-you-1.png" alt="" class="for-you-img">
+                                </article>
+                                <article class="for-you__article swiper-slide">
+                                    <img src="./img/for-you-2.png" alt="" class="for-you-img">
+                                </article>
+                                <article class="for-you__article swiper-slide">
+                                    <img src="./img/for-you-3.png" alt="" class="for-you-img">
+                                </article>
+                            </div>
+                        </div>
+    
+                        <div class="swiper-button-prev">
+                            <img src="./img/for-you-left.svg" alt="">
+                        </div>
+                        <div class="swiper-button-next">
+                            <img src="./img/for-you-right.svg" alt="">
+                        </div>
+                    </div>
+    
+                    <div class="for-you__fullscreen">
+                        Toàn màn hình
+                    </div>
+    
+                    <div class="for-you-main">
+                        <h6 class="for-you-title">
+                            Giải trí
+                        </h6>
+    
+                        <div class="for-you-image">
+                            <div class="for-you__swiper swiper">
+                                <div class="swiper-wrapper">
+                                    <article class="for-you__cart swiper-slide">
+                                        <div class="for-you__add">
+                                            <img src="./img/add.svg" alt="">
+                                        </div>
+                                        <div class="for-you__link">
+                                            Blank
+                                        </div>
+                                    </article>
+                                    <article class="for-you__cart swiper-slide">
+                                        <img src="./img/vtv.png" alt="">
+                                        <div class="for-you__link">
+                                            VTV GO
+                                        </div>
+                                    </article>
+                                    <article class="for-you__cart swiper-slide">
+                                        <img src="./img/htv3.png" alt="">
+                                        <div class="for-you__link">
+                                            HTV3
+                                        </div>
+                                    </article>
+    
+                                    <article class="for-you__cart swiper-slide">
+                                        <img src="./img/thvl.png" alt="">
+                                        <div class="for-you__link">
+                                            THVL
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+    
+                            <div class="swiper-button-next for-you__right-1">
+                                <img src="./img/for-you-right.svg" alt="">
+                            </div>
+                        </div>
+    
+                        <h6 class="for-you-advertisement">
+                            Quảng cáo
+                        </h6>
+                        <div class="for-you__card">
+                            <div class="for-you__data swiper">
+                                <div class="swiper-wrapper">
+                                    <article class="for-you__cart swiper-slide">
+                                        <img src="./img/for-you-8.png" alt="">
+                                        <div class="for-you__link">
+                                            1/4 dọc
+                                        </div>
+                                    </article>
+                                    <article class="for-you__cart swiper-slide">
+                                        <img src="./img/for-you-9.png" alt="">
+                                        <div class="for-you__link">
+                                            1/4 ngang
+                                        </div>
+                                    </article>
+                                    <article class="for-you__cart swiper-slide for-you-full">
+                                        <div class="for-you__add">
+                                            <img src="./img/add.svg" alt="">
+                                        </div>
+                                        <div class="for-you__link">
+                                            Toàn màn hình
+                                        </div>
+                                    </article>
+    
+                                    <article class="for-you__cart swiper-slide ">
+                                        <img src="./img/for-you-10.jfif" alt="" class="for-you-img-10">
+                                        <div class="for-you__link">
+                                            HTV3
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+    
+                            <div class="swiper-button-next for-you__right">
+                                <img src="./img/for-you-right.svg" alt="">
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+    
+                <div class="for-you-artboard">
+                    <img src="./img/Artboard 1 1.png" alt="" class="for-you-image-1">
+                </div>
+    
+                <div class="for-you-artboard">
+                    <img src="./img/Artboard 1 2.png" alt="" class="for-you-image-2">
+                </div>
+    
+                <div class="for-you-artboard">
+                    <img src="./img/Artboard 1 3.png" alt="" class="for-you-image-3">
+                </div>
+            </div>
+            <div class="for-you__bg">
+            </div>
+
+            <div class="login__for-you" id="login-for-you">
+                <img src="./img/login-img-1.png" alt="">
+                <p class="login__desc">
+                    Có phải bạn đang đăng nhập?
+                </p>
+                <button class="login__button login__button-1" id="login-button-1">
+                    Đăng nhập với tài khoản này
+                </button>
+
+                <button class="login__button login__button-2" id="login-button-2">
+                   Không phải tôi
+                </button>
+            </div>
+        </section>
+        
+        
+
+    </section>
+
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+.personal__information{
+    background-color: $grrenef;
+    &-subtitle{
+        display: flex;
+        align-items: center;
+        column-gap: 4.5rem;
+        margin-bottom: 40px ;
+
+    }
+    &-container{
+        padding-top: 4.4rem;
+        transform: translateX(1.5px);
+    }
+    &-description{
+        color: $grren03;
+        font-weight: 600;
+        font-size: 24px;
+        font-family: "SVN-Gilroy", sans-serif;
+        letter-spacing: -0.3px;
+        margin-bottom: 0px !important;
+    }
+    &-avatar{
+        position: relative;
+        margin-bottom: 3.1rem;
+    }
+    &-img{
+        margin: 0 auto;
+    }
+    &-camera{
+        position: absolute;
+        bottom: -0.7rem;
+        right: 7.6rem;
+    }
+    &-fullname{
+        color: #000;
+        font-weight: 600;
+        font-family: "SVN-Gilroy", sans-serif;
+        font-size: 20px;
+        margin-bottom: 0.8rem;
+    }
+    &-input{
+        padding: 0 0px 4.6px 0px;
+        border-left: none !important;
+        border-right: none !important;
+        border-top: none !important;
+        display: block;
+        width: 100%;
+        transform: translateY(2px);
+        &::placeholder{
+            color: $black45;
+            font-weight: 600;
+            font-family: "SVN-Gilroy", sans-serif;
+            transform: translateX(-2px);
+            letter-spacing: -0.4px;
+            font-size: 16px;
+        }
+    }
+    &-control {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2.8rem;
+    }
+    &-momo{
+        margin-bottom: 0.6rem;
+    }
+    &-address{
+        margin-bottom: 0.6rem;
+    }
+    &--phone{
+        padding: 0 0px 4.6px 2px !important;
+        &::placeholder{
+            letter-spacing: 1px;
+
+        }
+    }
+    &--fullname{
+        &::placeholder{
+            letter-spacing: 0.2px !important;
+        }
+    }
+    h6.personal__information-fullname.personal__information--fullname {
+        letter-spacing: -0.2px;
+    }
+    &-Phone{
+        transform: translateY(0px) !important;
+        &::placeholder{
+            letter-spacing: 0.8px;
+        }
+    }
+    &-main{
+        margin-top: 2.9rem;
+    }
+    &-desc{
+        color: #000;
+        font-weight: 600;
+        font-family: "SVN-Gilroy", sans-serif;
+        font-size: 20px;
+        margin-bottom: 13px;
+    }
+    &-skincare {
+        height: 22px;
+        padding: 0px 4px 0px;
+        display: flex;
+        align-items: center;
+        border-radius: 30px;
+        font-weight: 600;
+        font-family: "SVN-Gilroy", sans-serif;
+        font-size: 14px;
+        letter-spacing: 0.3px;
+
+    }
+    &-button{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(82px, 1fr));
+        gap: 0.55rem;
+      
+    }
+    &-succes{
+        border: 1px solid #35AA4F;
+        color: #35aa4f;
+    }
+    &-primary{
+        border: 1px solid #2966D1;
+        color: #2966D1;
+    }
+    &-danger{
+        color: #d6232c;
+        border: 1px solid #d6232c;
+    }
+    &-waning{
+        color: #ddb508;
+        border: 1px solid #ddb508;
+    }
+}

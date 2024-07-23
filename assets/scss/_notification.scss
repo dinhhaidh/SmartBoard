@@ -1,0 +1,48 @@
+.login{
+    &__for-you{
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        z-index: 3;
+        height: 476px;
+        border-radius: 18px 21px 0 0;
+        img{
+            width: 300px;
+            height: 300px;
+            margin: 10px auto 12px;
+        }
+    }
+    &__desc{
+        text-align: center;
+        font-weight: 600;
+        font-size: 16px;
+        font-family: "SVN-Gilroy", sans-serif;
+        margin-bottom: 1.5rem;    
+        letter-spacing: 0.15px;
+
+    }
+    &__button{
+        width: 90%;
+        border-radius: 30px;
+        padding: 10px;
+        font-weight: 600;
+        font-size: 16px;
+        font-family: "SVN-Gilroy", sans-serif;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    &__button-1{
+        background-color: #121212;
+        color: #fff;
+        margin-bottom: 1.2rem;
+    }
+    &__button-2{
+        background-color: #fff;
+        color: #121212;
+        border: 1px solid #000;
+        margin-bottom: 1rem;
+    }
+}

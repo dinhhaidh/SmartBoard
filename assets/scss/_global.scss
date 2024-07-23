@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('../fonts/SF-Pro-Display/SF-Pro-Display-Medium.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MyFont';
+    src: url('../fonts/SF-Pro-Display/SF-Pro-Display-Bold.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MyFont';
+    src: url('../fonts/SF-Pro-Display/SF-Pro-Display-Regular.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MyFont';
+    src: url('../fonts/SF-Pro-Display/SF-Pro-Display-Semibold.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MyFont';
+    src: url('../fonts/SVN-Gilroy/SVN-Gilroy\ Thin.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('../fonts/SVN-Gilroy/SVN-Gilroy\ Medium.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MyFont';
+    src: url('../fonts/SVN-Gilroy/SVN-Gilroy\ Regular.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MyFont';
+    src: url('../fonts/SVN-Gilroy/SVN-Gilroy\ Bold.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MyFont';
+    src: url('../fonts/SVN-Gilroy/SVN-Gilroy\ SemiBold.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MyFont';
+    src: url('../fonts/SVN-Gilroy/SVN-Gilroy\ Thin.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+  
+  /* Sử dụng font trong phần khác của mã SCSS */
+  body {
+    font-family: 'MyFont', sans-serif;
+  }
+
+
+
+.container{
+    max-width:  358px;
+    margin-inline: 1.5rem;
+    
+  }
+  @media screen and (max-width: 400px) {
+    .container{
+        margin-inline: 1rem !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        // margin: 0 auto !important;
+    }
+}
+@media screen and (max-width: 370px) {
+    .container{
+        margin-inline: 1rem !important;
+        // margin: 0 auto !important;
+    }
+}
+.swiper-button-prev::after,
+.swiper-button-next::after{
+  content: "";
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 36px;
+  height: 36px;
+  background-color: $black15;
+  padding: .5rem;
+  font-size: 1.5rem;
+  color: var(--frist-color);
+  transition: border .4s, background-color .4s;
+  border-radius: 50%;
+}
+.swiper-button-next{
+  top: 19.3rem;
+  right: 0rem;
+  z-index: 1;
+
+  img{
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+
+  }
+}
+.swiper-button-prev{
+  top: 19.3rem;
+  left: 0rem;
+  z-index: 1;
+  img{
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+
+  }
+}

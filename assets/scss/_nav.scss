@@ -1,0 +1,86 @@
+.nav {
+    // height: 3.8rem;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    &__logo {
+        color: $black13;
+        font-weight: 590;
+        font-size: 17px;
+        text-decoration: none;
+        margin-left: 1.6rem;
+        font-family: 'SF-Pro-Display', sans-serif;
+    }
+    &__action{
+        display: flex;
+        column-gap: 0.4rem;
+        margin-right: 0.8rem;
+
+
+    }
+    @media screen and (max-width: 1023px) {
+        &__menu {
+            position: fixed;
+            bottom: 0rem;
+            background-color: $whitefb;
+            width: 100%;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            transition: .4s;
+            padding: 10px 11px 0px 10px;
+            box-shadow: 0 4px 12px hsl(0, 0%, 80%);
+            border-radius: 10px 10px 0 0;
+            z-index: 3 !important;
+        }
+        &__list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-content: center;
+        }
+        &__link {
+            justify-content: center;
+            row-gap: .4rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            // display: grid;
+            // width: 85px;
+            align-items: center;
+            text-decoration: none !important;
+            font-family: "SVN-Gilroy", sans-serif;
+            span{
+                color: $black45;
+                font-weight: 600;
+                font-size: 12px;
+            }
+            img{
+                margin: 0 auto;
+                width: 24px;
+                height: 24px;
+            }
+
+        }
+    
+    }
+    &__action-cellular{
+        width: 19.2px;
+        height: 12.23px;
+    }
+    &__action-Wifi{
+        width: 17.14px;
+        height: 12.33px;
+    }
+    &__action-Battery{
+        width: 27.33px;
+        height: 13px;
+    }
+    &__item{
+        margin-bottom: 10px;
+    }
+
+    
+}
+.active-link{
+    color: $grren03;
+}
