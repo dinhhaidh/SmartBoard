@@ -1,0 +1,100 @@
+.screen__setting{
+    &-advertisement{
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "SVN-Gilroy", sans-serif;
+        margin-bottom: 0.9rem;
+        color: #038168;
+    }
+    &-green{
+        text-align: center;
+        transform: translateX(16px);
+        letter-spacing: -0.5px;
+        margin-bottom: 0.8rem;
+    }
+    &-icon{
+        column-gap: 0.6rem !important;
+        margin-bottom: 2.6rem;
+    }
+    &-images{
+        margin-bottom: 1.2rem !important;
+    }
+    &-entertainment{
+        color: $black15;
+    }
+    &__main{
+        margin-top: 0px;
+    }
+    &-cart{
+        height: 130px !important;
+    }
+    &-button{
+        background-color: $black15;
+        width: 80px;
+        color: $graycf;
+        border-radius: 30px;
+        height: 32px;
+        margin-top: 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3px 0 5px;
+    }
+    &-data{
+        margin-top: 1px !important;
+    }
+    &-image{
+        margin: 1.55rem 0 2.2rem;
+    }   
+    &-games{
+        margin-bottom: 0.9rem !important;
+    } 
+}
+
+.custom{
+    &-checkbox{
+        position: relative;
+        display: inline-block;
+        width: 70px;
+        height: 26px;
+        margin-bottom: 33px;
+        text-align: center;
+        justify-content: center;
+    }
+    &-checkbox .slider{
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #454545;
+        transition: .4s;
+        border-radius: 34px;
+    }
+    .slider{
+        position: absolute;
+        right: 3rem;
+        color: #fff;
+    }
+    &-checkbox input:checked + .slider {
+        background-color: #2196F3;
+    }
+    &-checkbox .slider:before {
+        position: absolute;
+        content: "";
+        height: 19px;
+        width: 19px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        transition: .4s;
+        border-radius: 50%;
+    }
+    &-checkbox input:checked + .slider:before {
+        transform: translateX(26px);
+    }
+}
+input[type="checkbox"] {
+    transform: translate(10px, 9px);
+}

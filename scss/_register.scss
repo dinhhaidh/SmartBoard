@@ -83,4 +83,31 @@
     &-form__passwork{
         margin-bottom: 2.1rem;
     }
+    &__descs{
+        margin-top: 4px;
+        letter-spacing: 0.5px;
+    }
+    &__forgot{
+        font-size: 14px;
+        font-weight: 600;
+        font-family: "SVN-Gilroy", sans-serif;
+        color:#038168;
+        text-align: right;
+        margin-bottom: 2.05rem;
+    }
+    &-passwords{
+        margin-bottom: 1.2rem;
+    }
+    &-white{
+        background-color:  #fff !important;
+        color: $black15;
+        border: 2px solid $black15;
+        margin-top: 2.6rem;
+    }
+    @media screen and (min-width: 420px) {
+        &__container{
+            margin: 0 auto;
+        }
+    }
+    
 }

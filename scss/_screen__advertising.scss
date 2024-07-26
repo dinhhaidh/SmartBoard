@@ -1,0 +1,110 @@
+.screen__advertising{
+    background-color: #EFEFEF;
+    &__container{
+        padding-bottom: 3rem;
+        padding-top: 4.6rem;
+    }
+   
+    &-icon{
+        margin-bottom: 2.1rem;
+    }
+    &-images{
+        position: relative;
+        margin-bottom: 1.9rem;
+    }
+    &-article{
+        scale: .9;
+        transition: scale .3s;
+    }
+    
+    .swiper-slide-active, .swiper-slide-duplicate-active {
+        scale: 1;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        top: 4.3rem;
+        right: 0rem;
+        z-index: 1;
+    }
+    &-desc,
+    &-description{
+        font-size: 16px;
+        font-weight: 600;
+        font-family: "SVN-Gilroy", sans-serif;
+    }
+    &-desc{
+        color: $black15;
+        margin-bottom: 0.8rem;
+    }
+    &-description{
+        color: $black45;
+        line-height: 1.35;
+        letter-spacing: -0.1px;
+        margin-bottom: 3rem;
+    }
+    &-describe{
+        font-size: 16px !important;
+        transform: translateY(2px);
+    }
+    &-button{
+        color: #cfcfcf;
+        background-color: $black12;
+        border-radius: 30px;
+        width: 95%;
+        padding: 0.4rem 0 0.7rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    &-link{
+        position: relative;
+        display: flex;
+        align-items: center;
+        img{
+            position: absolute;
+            top: 0.5rem;
+            left: 0.5rem;
+            width: 16px;
+            height: 16px;
+        }
+        input{
+            padding: 0.3rem 0 0.4rem 2.2rem;
+            border: none;
+            width: 100%;
+            margin-bottom: 1.9rem;
+            background-color: #fff;
+            border-radius: 8px;
+            &::placeholder{
+                font-size: 16px;
+                font-weight: 600;
+                font-family: "SVN-Gilroy", sans-serif;
+            }
+        }
+    }
+    &-des{
+        margin-bottom: 2.2rem;
+    }
+    &-icons{
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(44px, 1fr));
+        gap: 2rem;
+        column-gap: 2.15rem;
+        margin-bottom: 2.55em;
+        justify-content: center;
+    }
+    &-select{
+        margin-bottom: 0.9rem;
+    }
+    &-bank{
+        border-radius: 8px;
+        border: 1px solid $black15;
+        padding: 0.5rem;
+        width: 44px;
+        height: 44px;
+        img{
+            width: 24px;
+            height: 24px;
+        }
+    }
+}

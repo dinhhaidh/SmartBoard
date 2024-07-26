@@ -3,7 +3,7 @@
     overflow: hidden;
     &__container{
         position: relative;
-        margin: 0 auto;
+        // margin: 0 auto;
     }
 
     &__information{
@@ -247,7 +247,30 @@
         right: 1rem;
         font-size: 1rem;
     }
-   
+    .swiper-button-next{
+        top: 19.3rem;
+        right: 0rem;
+        z-index: 1;
+      
+        img{
+          width: 16px;
+          height: 16px;
+      
+        }
+      }
+      .swiper-button-prev{
+        top: 19.3rem;
+        left: 0rem;
+        z-index: 1;
+        img{
+          width: 16px;
+          height: 16px;
+        }
+      }
+      .swiper-button-next.for-you__right-1 {
+        top: 33rem;
+        right: 1rem;
+    }
     
 }
 .show-menu{

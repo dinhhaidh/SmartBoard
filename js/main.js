@@ -40,7 +40,7 @@ window.addEventListener('scroll', scrollActive)
 /*=============== for-you SWIPER slider ===============*/
 let swiperFor = new Swiper('.for-you-content', {
     loop: true,
-    spaceBetween: 18,
+    spaceBetween: 22,
     slidesPerView: 'auto',
     centeredSlides: 'auto',
 
@@ -58,7 +58,7 @@ let swiperFor = new Swiper('.for-you-content', {
 let swiperImage = new Swiper('.for-you__swiper', {
     loop: true,
     grabCursor: true,
-    spaceBetween: 18,
+    spaceBetween: 20,
     slidesPerView: 'auto',
     centeredSlides: false,
 
@@ -74,7 +74,7 @@ let swiperImage = new Swiper('.for-you__swiper', {
 
 let swiperCart = new Swiper('.for-you__data', {
     loop: true,
-    spaceBetween: 18,
+    spaceBetween: 20,
     slidesPerView: 'auto',
     centeredSlides: false,
 

@@ -29,7 +29,7 @@
             margin: 0 auto;
             transition: .4s;
             padding: 10px 11px 0px 10px;
-            box-shadow: 0 4px 12px hsl(0, 0%, 80%);
+            box-shadow: 0 4px 25px hsl(0, 0%, 80%);
             border-radius: 10px 10px 0 0;
             z-index: 3 !important;
         }
@@ -37,15 +37,14 @@
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             justify-content: center;
+            column-gap: 1rem;
         }
         &__link {
             justify-content: center;
-            row-gap: .4rem;
             text-align: center;
             display: flex;
             flex-direction: column;
-            // display: grid;
-            // width: 85px;
+            
             align-items: center;
             text-decoration: none !important;
             font-family: "SVN-Gilroy", sans-serif;
@@ -76,7 +75,7 @@
         height: 13px;
     }
     &__item{
-        margin-bottom: 10px;
+        margin-bottom: 1px;
     }
 
     
