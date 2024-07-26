@@ -1449,4 +1449,96 @@ body {
   color: #038168;
   text-align: right;
   letter-spacing: -0.5px;
+  margin-top: 2.2rem;
+}
+
+.nail {
+  background-color: #FFF2F2;
+}
+.nail__container {
+  padding-top: 5.05rem;
+  padding-bottom: 4rem;
+}
+.nail__icon {
+  margin-bottom: 2.4rem !important;
+}
+.nail__square {
+  display: grid;
+  grid-template-columns: 50px 131.5px 15px 131.5px;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.3rem;
+}
+.nail__des {
+  text-align: right;
+}
+.nail__content {
+  padding-top: 2.6rem;
+}
+.nail__text, .nail__heading, .nail__des {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "SVN-Gilroy", sans-serif;
+}
+.nail__des {
+  letter-spacing: 0.3px;
+}
+.nail__total {
+  margin-top: 2.7rem;
+  color: #9D4339;
+  font-size: 16px !important;
+  letter-spacing: 0.1px;
+}
+.nail__button-white {
+  background-color: #fff;
+  border: 3px solid #151515;
+  border-radius: 60px;
+  width: 96px;
+  height: 34px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "SVN-Gilroy", sans-serif;
+}
+.nail__button-black {
+  color: #EFEFEF;
+  background-color: #151515;
+  width: 190px;
+  height: 34px;
+  border-radius: 60px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "SVN-Gilroy", sans-serif;
+}
+.nail__buttons {
+  margin-top: 2.75rem;
+  text-align: right;
+  display: flex;
+  -moz-column-gap: 0.55rem;
+       column-gap: 0.55rem;
+  justify-content: right;
+}
+.nail-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2.2rem;
+}
+.nail__arrow-left {
+  height: 51px !important;
+  width: 30px !important;
+  background: #151515;
+  border-radius: 0 8px 0 0;
+  display: block;
+}
+.nail__arrow-left img {
+  color: #fff;
+}
+.nail-left {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "SVN-Gilroy", sans-serif;
+}
+.nail__logo {
+  margin-left: 9px;
 }/*# sourceMappingURL=main.css.map */
