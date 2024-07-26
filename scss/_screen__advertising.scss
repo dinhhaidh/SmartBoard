@@ -107,4 +107,16 @@
             height: 24px;
         }
     }
+    &-checkbox{
+        margin-bottom: 2.1rem;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &-main {
+        margin-bottom: 7rem !important;
+    }
+    &-comment{
+        margin-bottom: 8rem;
+    }
 }

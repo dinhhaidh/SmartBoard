@@ -1,0 +1,64 @@
+.finance{
+    &__container{
+        padding-top: 4.65rem;
+    }
+    &__heading{
+        letter-spacing: -0.4px;
+    }
+    &__button{
+        background: $black15;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+        height: 32px;
+        padding: 0.5rem 1rem;
+        margin-bottom: 1.9rem;
+    }
+    &__text{
+        color: $grayb4;
+        font-size: 12px;
+        font-weight: 600;
+        font-family: "SVN-Gilroy", sans-serif;
+    }
+    &-icon{
+        margin-bottom: 2.2rem !important;
+    }
+    &__data{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(71.6px, 1fr));
+        align-items: center;
+        margin-bottom: 1.75rem;
+        span{
+            font-size: 14px;
+            font-weight: 600;
+            font-family: "SVN-Gilroy", sans-serif;
+            color: $black15;
+            text-align: center;
+            line-height: 1.5;
+        }
+    }
+    &__content{
+        border-bottom: 2px solid rgba(180, 180, 180, 0.6);
+        padding-bottom: 0.5rem;
+        margin-bottom: 1.9rem;
+    }
+    &__skincare{
+        color: #038168 !important;
+    }
+    &__description{
+        color: $grayb4;
+    }
+    &__main{
+        margin-bottom: 5px;
+    }
+    &__total{
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "SVN-Gilroy", sans-serif;
+        color: #038168;
+        text-align: right;
+        letter-spacing: -0.5px;
+    }
+
+}

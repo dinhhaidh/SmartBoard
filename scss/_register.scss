@@ -100,9 +100,22 @@
     }
     &-white{
         background-color:  #fff !important;
-        color: $black15;
+        color: $black15 !important;
         border: 2px solid $black15;
         margin-top: 2.6rem;
+    }
+    &__wrong-login{
+        color: #E01600;
+        font-size: 14px;
+        font-weight: 600;
+        font-family: "SVN-Gilroy", sans-serif;
+        margin-bottom: 1.2rem;
+    }
+    &__form-phone{
+        margin-bottom: 2.17rem !important;
+    }
+    &__forgot-password{
+        letter-spacing: 0.75px !important;
     }
     @media screen and (min-width: 420px) {
         &__container{
