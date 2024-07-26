@@ -86,3 +86,46 @@ let swiperCart = new Swiper('.for-you__data', {
         nextEl: '.swiper-button-next',
       },
 });
+let swiperNail = new Swiper('.nail-data', {
+    loop: true,
+    spaceBetween: 20,
+    slidesPerView: 'auto',
+    centeredSlides: 'auto',
+
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+      },
+});
+
+let swiperNailswiper = new Swiper('.nail-swiper', {
+    loop: true,
+    spaceBetween: 25,
+    slidesPerView: 'auto',
+    centeredSlides: false,
+
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+      },
+});
+let swiperNailImage = new Swiper('.nail__images', {
+    loop: true,
+    spaceBetween: 25,
+    slidesPerView: 'auto',
+    centeredSlides: false,
+
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+      },
+});

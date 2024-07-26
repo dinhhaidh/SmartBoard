@@ -1454,6 +1454,7 @@ body {
 
 .nail {
   background-color: #FFF2F2;
+  overflow: hidden;
 }
 .nail__container {
   padding-top: 5.05rem;
@@ -1517,12 +1518,16 @@ body {
        column-gap: 0.55rem;
   justify-content: right;
 }
+.nail-container {
+  margin-top: -1rem;
+  padding-bottom: 7.2rem;
+}
 .nail-content {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 2.2rem;
+  padding-top: 2.3rem;
 }
 .nail__arrow-left {
   height: 51px !important;
@@ -1533,12 +1538,198 @@ body {
 }
 .nail__arrow-left img {
   color: #fff;
+  position: absolute;
+  top: 3rem;
+  padding: 0 0 0 0.5rem;
 }
-.nail-left {
+.nail__arrow-right {
+  height: 51px !important;
+  width: 30px !important;
+  background: #B4B4B4;
+  border-radius: 8px 0 0 0;
+  display: block;
+}
+.nail__arrow-right img {
+  color: #fff;
+  position: absolute;
+  top: 3rem;
+  padding: 0 0 0 0.5rem;
+}
+.nail-left, .nail-right {
   font-size: 14px;
   font-weight: 600;
   font-family: "SVN-Gilroy", sans-serif;
 }
-.nail__logo {
-  margin-left: 9px;
+.nail__logo img {
+  margin-left: -1px;
+}
+.nail-left {
+  width: 57px;
+  height: 29px;
+  background: #151515;
+  color: #EFEFEF;
+  display: block;
+  border-radius: 0 8px 0 0;
+  position: absolute;
+  top: 4rem;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+}
+.nail-right {
+  width: 57px;
+  height: 29px;
+  background: #B4B4B4;
+  color: #EFEFEF;
+  display: block;
+  border-radius: 8px 0 0 0;
+  position: absolute;
+  top: 4rem;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  right: 0px;
+}
+.nail__article {
+  width: 235.71px;
+}
+.nail-data {
+  width: 245px !important;
+  overflow: hidden;
+  position: relative;
+}
+.nail .swiper-button-next {
+  right: 42px;
+  left: auto;
+  top: 12.9rem;
+  background-color: rgba(21, 21, 21, 0.6);
+  width: 28.57px;
+  height: 28.57px;
+}
+.nail .swiper-button-prev {
+  left: 40px;
+  right: auto;
+  background-color: rgba(21, 21, 21, 0.4);
+  right: auto;
+  top: 12.9rem;
+  width: 28.57px;
+  height: 28.57px;
+}
+.nail-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin: 1.03rem 0 1rem;
+  transform: translateX(-11px);
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+.nail-button {
+  display: flex;
+  align-items: center;
+  width: 141px;
+  height: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "SVN-Gilroy", sans-serif;
+  -moz-column-gap: 9px;
+       column-gap: 9px;
+  border: 1px solid #151515;
+  border-radius: 20px;
+  color: #151515;
+  padding: 1px 3px 3px 7px;
+  letter-spacing: 0.1px;
+}
+.nail__continue {
+  width: 62px;
+  height: 20px;
+  background: #151515;
+  color: #EFEFEF;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "SVN-Gilroy", sans-serif;
+  border-radius: 20px;
+}
+.nail__color-tone {
+  color: #EFEFEF;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "SVN-Gilroy", sans-serif;
+  background: #151515;
+  width: 121.68px;
+  height: 23px;
+  border-radius: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  transform: translateX(-3px);
+  border: 2px solid #FFF2F2;
+}
+.nail__select-color {
+  background: #EFEFEF;
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px #e5d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 10.5px;
+       column-gap: 10.5px;
+  padding: 0.5rem 0 0.8rem;
+  height: 55px;
+  width: 338px;
+  transform: translateX(10px);
+}
+.nail__danger, .nail__brick, .nail__yellow, .nail__green, .nail__primary, .nail__purple {
+  width: 32px;
+  height: 32px;
+  border-radius: 360px;
+}
+.nail__danger {
+  border: 1px solid #460E0E;
+  background-color: #FF5F5F;
+}
+.nail__brick {
+  background-color: #FF8933;
+}
+.nail__yellow {
+  background-color: #F5D425;
+}
+.nail__green {
+  background-color: #2ED549;
+}
+.nail__primary {
+  background-color: #456EFF;
+}
+.nail__purple {
+  background-color: #C23DF0;
+}
+.nail-main {
+  padding-top: 3.3rem;
+  position: relative;
+}
+.nail-main .swiper-button-next {
+  right: -3px;
+  left: auto;
+  top: 11.1rem;
+  background-color: rgba(21, 21, 21, 0.6);
+  width: 28.57px;
+  height: 28.57px;
+}
+.nail-article {
+  width: 132px !important;
+  height: 94px !important;
+  display: flex;
+  flex-direction: column;
+  row-gap: 11px;
+}
+.nail-article img {
+  height: 66px !important;
+}
+.nail-article span {
+  font-family: "Volkhov", serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+.nail__images {
+  margin-top: 2.7rem;
 }/*# sourceMappingURL=main.css.map */
